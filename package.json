@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private":"true",
   "scripts": {
-    "start": "node app",
+    "start": "node index",
     "watch":"node-sass --watch src/resources/scss/ -o src/public/css/",
-    "dev": "nodemon app"
+    "dev": "nodemon index"
     
   },
   "repository": {
