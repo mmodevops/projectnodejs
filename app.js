@@ -22,9 +22,12 @@ app.get('/', (req, res) => {
   res.render('home')
 })
 
-var port = process.env.PORT || 3000;
-app.listen(port, () => {
-    console.log('http://localhost:5000')
-});
+// PORT
+const PORT = process.env.PORT || 8081;
+
+// Listen on port 8081
+app.listen(PORT, () =>
+  console.log(`Application is listening on port ${PORT}!`)
+);
 
 
