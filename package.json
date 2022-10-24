@@ -2,11 +2,11 @@
   "name": "projectnodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index",
+    "start": "node app",
     "watch":"node-sass --watch src/resources/scss/ -o src/public/css/",
-    "dev": "nodemon index"
+    "dev": "nodemon app"
     
   },
   "repository": {
