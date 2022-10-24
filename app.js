@@ -1,5 +1,5 @@
 const express = require('express');
-const logger = require('morgan');
+const morgan = require('morgan');
 const {engine} = require('express-handlebars');
 const path = require('path');
 const app = express();
@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'src/public')));
 
 
 // HTTP logger
-app.use(logger('dev'));
+app.use(morgan('dev'));
 
 //Template engine
 app.engine('hbs', engine({
