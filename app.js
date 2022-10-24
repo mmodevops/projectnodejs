@@ -1,14 +1,14 @@
 const express = require('express');
-const app = express();
-const morgan = require('morgan');
+const logger = require('morgan');
 const {engine} = require('express-handlebars');
 const path = require('path');
+const app = express();
 
 app.use(express.static(path.join(__dirname, 'src/public')));
 
 
 // HTTP logger
-app.use(morgan('dev'));
+app.use(logger('dev'));
 
 //Template engine
 app.engine('hbs', engine({
@@ -22,9 +22,9 @@ app.get('/', (req, res) => {
   res.render('home')
 })
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log('http://localhost:3000')
-})
+});
 
 
