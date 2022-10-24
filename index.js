@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const port = 3000;
 const morgan = require('morgan');
 const {engine} = require('express-handlebars');
 const path = require('path');
@@ -23,6 +22,9 @@ app.get('/', (req, res) => {
   res.render('home')
 })
 
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+
