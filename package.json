@@ -1,8 +1,7 @@
 {
   "name": "projectnodejs",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "private":"true",
   "scripts": {
     "start": "node app",
     "watch":"node-sass --watch src/resources/scss/ -o src/public/css/",
