@@ -26,6 +26,10 @@ app.use(express.static(path.join(__dirname, 'src/public')));
 app.get('/', (req, res) => {
   res.render('home');
 })
+app.get('/search', (req, res) => {
+  console.log(req.query.q);
+  res.render('search');
+})
 
 
 
