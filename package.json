@@ -2,11 +2,18 @@
   "name": "projectnodejs",
   "version": "1.0.0",
   "private": true,
-
   "scripts": {
+    "beautiful":"lint-staged",
     "start": "node app",
     "watch": "node-sass --watch src/resources/scss/ -o src/public/css/",
     "dev": "nodemon app"
+  },
+  "lint-staged":{
+  "src/**/*.{js,json,scss}":"prettier --single-quote --trailing-comma all --tab-width 4 --write "},
+  "husky":{
+    "hooks":{
+      "pre-comit":"lint-staged"
+    }
   },
   "dependencies": {
     "debug": "~2.6.9",
@@ -18,7 +25,10 @@
     "nodemon": "^2.0.20"
   },
   "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "node-sass": "^7.0.3",
+    "prettier": "^2.7.1",
     "sass": "^1.55.0"
   }
 }

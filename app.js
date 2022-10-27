@@ -18,13 +18,13 @@ app.set('views', path.join(__dirname, 'src/resources/views'));
 app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, 'src/public')));
 
-app.use(express.urlencoded({extended: true})); 
-app.use(express.json());   
+         app.use(express.urlencoded({extended: true})); 
+   app.use(express.json());   
 
-route(app);
+       route(app);
 
 
-const port = process.env.PORT || 3000;
+    const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log("Server is running http://localhost:3000");
