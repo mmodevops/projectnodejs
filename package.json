@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "beautiful": "lint-staged",
     "start": "node app",
     "watch": "node-sass --watch src/resources/scss/ -o src/public/css/",
+    "beautiful": "lint-staged",
     "dev": "nodemon app"  
   },
   "lint-staged": {
