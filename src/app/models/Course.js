@@ -3,8 +3,8 @@ const slug = require('mongoose-slug-generator');
 mongoose.plugin(slug);
 const Schema = mongoose.Schema;
 
-
-const Course = new Schema({
+// Course
+const asm2 = new Schema({
     name: {type: String, required:true, },
     description:{type: String},
     image:{type: String },
@@ -14,4 +14,4 @@ const Course = new Schema({
     timestamps: true,
 });
 
-module.exports = mongoose.model('Course', Course);
+module.exports = mongoose.model('asm2', asm2);

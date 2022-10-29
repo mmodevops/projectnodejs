@@ -7,7 +7,20 @@ const app = express();
 const methodOverride = require('method-override');
 const route = require('./src/routes/index');
 const db = require('./src/config/db/index');
-db.connect();
+// db.connect();
+
+var mongoose = require('mongoose')
+var url =
+    'mongodb+srv://namanh:12345abc@sandbox.yaprtgs.mongodb.net/asm2'
+
+mongoose.connect(url, { useNewUrlParser: true }, err => {
+    if (!err) {
+        console.log('DB connect succeed !')
+    } else {
+        console.error(err)
+    }
+})
+
 
 // view engine setup
 // Template engine
