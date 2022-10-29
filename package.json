@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start":"node app.js",
+    "start": "node app.js",
     "watch": "node-sass --watch src/resources/scss/ -o src/public/css/",
     "dev": "nodemon app"
   },
@@ -90,7 +90,6 @@
     "escape-string-regexp": "^1.0.5",
     "etag": "^1.8.1",
     "execa": "^6.1.0",
-    "express": "^4.16.4",
     "express-handlebars": "^6.0.6",
     "extend": "^3.0.2",
     "extsprintf": "^1.3.0",
@@ -353,6 +352,7 @@
     "yargs-parser": "^20.2.9"
   },
   "devDependencies": {
+    "express": "^4.18.2",
     "nodemon": "^2.0.20"
   },
   "repository": {
