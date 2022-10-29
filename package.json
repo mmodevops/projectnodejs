@@ -9,11 +9,11 @@
     "dev": "nodemon app"
   },
   "lint-staged": {
-    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write "
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
   "husky": {
     "hooks": {
-      "pre-comit": "lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "dependencies": {
@@ -21,7 +21,11 @@
     "express": "~4.16.1",
     "express-handlebars": "^6.0.6",
     "hbs": "^4.2.0",
+    "method-override": "^3.0.0",
     "module_name": "^1.0.0",
+    "mongodb": "^4.11.0",
+    "mongoose": "^6.7.0",
+    "mongoose-slug-generator": "^1.0.4",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.20"
   },

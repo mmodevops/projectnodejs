@@ -1,3 +1,5 @@
+const Course = require('../models/Course');
+
 class NewsController {
     index(req, res) {
         res.render('news');
