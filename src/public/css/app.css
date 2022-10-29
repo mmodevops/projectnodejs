@@ -6,3 +6,9 @@ h2 {
 
 .card-course-item {
   margin-top: 16px; }
+
+.footer {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  text-align: center; }

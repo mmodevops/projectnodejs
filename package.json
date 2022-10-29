@@ -1,12 +1,12 @@
 {
   "name": "projectnodejs",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "beautiful": "lint-staged",
     "start": "node app",
     "watch": "node-sass --watch src/resources/scss/ -o src/public/css/",
-    "dev": "nodemon app"
+    "dev": "nodemon app"  
   },
   "lint-staged": {
     "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
