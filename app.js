@@ -29,7 +29,7 @@ app.use(methodOverride('_method'));
 
 route(app);
 
-const port = process.env.PORT || 7676;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log("Server is running http://localhost:3000");
